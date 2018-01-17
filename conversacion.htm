@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Ideario</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+
+    <header>
+      <a href="index.htm"><img class="header" src="ideario.png" alt=header></a>
+      <hr>
+    </header>
+
+    <nav style="font-family:sans;">
+        <ul>
+            <a href="videos.htm"><li>V.ide@s</li></a>
+            <a href="eventos.htm"><li>Eventos</li></a>
+            <a href="conversacion.htm"><li class="active">Conversaciones</li></a>
+          </ul>
+    </nav>
+
+    <div align="center">
+      <div class=container style="max-width:500px">
+
+            <section style="text-align:left">
+              <h1>Conversaciones</h1>
+              <p style="font-family:monospace">Las conversaciones son sub-páginas para discutir algun tema en específico, también podes buscar por zona para saber qué sucede a tu alrededor</p>
+              <div class="row">
+                <div class="column1" style="background-color:#CCCCCC;">
+                  <h2>Temas:</h2>
+                  <hr>
+                  <ul>
+                    <li><a class="link2" href="conversaciones/actculto.htm">Activacion Cultural Oeste</a></li>
+                  </ul>
+                  </div>
+                <div class="column2" style="background-color:#bbb;">
+                  <h2>Zonas:</h2>
+                  <hr>
+                    <ul>
+                      <a class="link" href="#"><li>Oeste SJ</li></a>
+                      <br>
+                      <a class="link" href="#"><li>Este SJ</li></a>
+                      <br>
+                      <a class="link" href="#"><li>San Jose Central</li></a>
+                      <br>
+                      <a class="link" href="#"><li>Heredia</li></a>
+                      <br>
+                      <a class="link" href="#"><li>Alajuela</li></a>
+                      <br>
+                      <a class="link" href="#"><li>Cartago</li></a>
+                    </ul>
+                </div>
+              </div>
+              <p style="font-family:monospace">Para iniciar una conversacion tenés que subir un video hablando sobre el tema y enviar un correo con la peticion a el-ideario@riseup.net</p>
+              <hr><p style="font-family:monospace">Actualmente solo se muestran zonas de la GAM por el hecho de que se está en la primera etapa del app. Somos concientes de que se puede tener más impacto si trabajamos primero en nuestro entorno immediato.Sin embargo podemos abrir conversaciones de zonas rurales a petición de los usuarios. escribir a el-ideario@riseup.net</p>
+            </section>
+
+            <h3>Mapa de Zonas - GAM:</h3>
+            <iframe style="border:solid 1px #000" width="100%" height="400px" frameBorder="0" src="https://umap.openstreetmap.fr/en/map/untitled-map_180886?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe><p><a href="https://umap.openstreetmap.fr/en/map/untitled-map_180886">See full screen</a></p>
+            <a class="link" href="infopage.htm" style="font-size:200%">+INFO</a>
+            <br>
+            <br>
+            <br>
+      </div>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>El Ideario</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../indexstyle.css">
+</head>
+<body>
+    <header>
+      <a href="index.htm"><img class="header" src="ideario.png" alt=header></a>
+      <p class="slogan" title="que es el ideario?">Plataforma de inteligencia colectiva<br> las ideas nos unen</p>
+    </header>
+    <nav style="font-family:sans;">
+        <ul>
+            <a href="../videos.htm" ><li>V.ide@s</li></a>
+            <a href="../eventos.htm"><li>Eventos</li></a>
+            <a href="../conversacion.htm"><li>Conversaciones</li></a>
+          </ul>
+    </nav>
+
+<div align=center>
+  <div class="container">
+    <section>
+      <button class="accordion">Compartir mis ideas en esta conversacion!</button>
+        <div class="panel">
+            <form id="form1" action="https://formspree.io/el-ideario@riseup.net" method="POST">
+              Pegar aquí la dirección URL de tu video/audio:<br>
+              <input type="url" name="videourl"><br>
+              Conversacion:<br>
+              <input type="text" value="Conversacion X" name="conversacion" readonly>
+              <br>
+              Zona:<br>
+              <input type="radio" value="conv" name="conversacion">GAM-oeste</input>
+              <br>
+              <input type="radio" value="conv" name="conversacion">GAM-este</input>
+              <br>
+              <br>
+              <input type="submit" value="Enviar">
+            </form>
+          <a class="link" href="../infopage.htm">+INFO</a>
+          <p style="font-size:85%;font-family:monospace">todo video será publicado siempre y cuando sea compatible con los <a class="link" href="../pilares.htm">pilares del Ideario</a></p>
+        </div>
+
+        <h1 style="font-size:200%">Conversacion X</h1>
+
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function(){
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              }
+          }
+          </script>
+
+
+      </section>
+  </div>
+</div>
+
+<div class="footer">
+  <a class="dif" href="ideario.apk" style="font-size:150%"> Descargar App</a>
+</div>
+</body>
+</html>

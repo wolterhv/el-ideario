@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Ideario</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="indexstyle.css">
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+  </script>
+</head>
+<body>
+
+    <header>
+      <a href="index.htm"><img class="header" src="ideario.png" alt=header></a>
+      <p class="slogan" title="que es el ideario?">Plataforma de inteligencia colectiva<br> las ideas nos unen</p>
+    </header>
+    <nav style="font-family:sans;">
+        <ul>
+            <a href="videos.htm"><li>V.ide@s</li></a>
+            <a href="eventos.htm"><li>Eventos</li></a>
+            <a href="conversacion.htm"><li>Conversaciones</li></a>
+        </ul>
+    </nav>
+
+<div align=center>
+  <div class="container" style="max-width:500px">
+    <section>
+      <iframe hidden style="border:0px;width:100%;height:" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" ></iframe>
+      <div class="portal">
+        <h2>Portal:</h2><button class="caos" onclick="refreshIframe();"><img src="img/caos2.png" style="width:50px" alt="caos"></button>
+      </div>
+      <iframe style="border:0px;width:100%;height:" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" ></iframe>
+      <h2 hidden >Nacional:</h2>
+      <iframe hidden style="border:0px;width:100%;height:" src="content/nac.htm" scrolling="no" onload="resizeIframe(this)" ></iframe>
+        <script>
+              function refreshIframe() {
+                  var ifr = document.getElementsByName('portal')[0];
+                  ifr.src = ifr.src;
+              }
+        </script>
+    </section>
+
+  </div>
+</div>
+
+</body>
+</html>

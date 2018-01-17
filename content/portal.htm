@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var videos = [
+ "https://www.youtube.com/embed/HZUXuKujQng",
+  "https://www.youtube.com/embed/Ye-xAoscVhU",
+  "https://www.youtube.com/embed/kT8If_4BoKM",
+  "https://www.youtube.com/embed/HWsFUw5SvsA",
+  "https://www.youtube.com/embed/xB5rLMMDvMM",
+  "https://www.youtube.com/embed/sqNRmXk9t8o",
+  "https://www.youtube.com/embed/j800SVeiS5I",
+"https://www.youtube.com/embed/Lw_c5cEnaFc",
+"https://www.youtube.com/embed/ay2ahcQtyCI",
+"https://www.youtube.com/embed/1mLZ0ar4A9A",
+"https://www.youtube.com/embed/zoFtuFB2ThY",
+"https://www.youtube.com/embed/OUeBHzEE7bI",
+"https://www.youtube.com/embed/isDL2VYXEsA",
+"https://www.youtube.com/embed/wZLpFNsW54A",
+
+];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '315');
+            player.setAttribute('height', '215');
+		player.setAttribute('frameborder', '0');
+            player.setAttribute('src', randomVideoUrl);
+            playerDiv.appendChild(player);
+        };
+    </script>
+</head>
+
+<body>
+    <div style="text-align:center" frameborder="0" id="random_player" />
+</body>
+
+</html>
