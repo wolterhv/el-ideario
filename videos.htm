@@ -5,11 +5,15 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
 <link rel="stylesheet" href="indexstyle.css">
+<script>
+function resizeIframe(obj) {
+  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
+</script>
 </head>
 <body>
     <header>
       <a href="index.htm"><img class="header" src="ideario.png" alt=header></a>
-      <hr class="purple">
     </header>
     <nav style="font-family:sans;">
         <ul>
@@ -34,35 +38,29 @@
           <a class="link" href="infopage.htm">+INFO</a>
           <p style="font-size:85%;font-family:monospace">todo video será publicado siempre y cuando sea compatible con los <a class="link" href="pilares.htm">pilares del Ideario</a></p>
         </div>
-
-          <script>
-          var acc = document.getElementsByClassName("accordion");
-          var i;
-
-          for (i = 0; i < acc.length; i++) {
-              acc[i].onclick = function(){
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  if (panel.style.display === "block") {
-                      panel.style.display = "none";
-                  } else {
-                      panel.style.display = "block";
-                  }
-              }
-          }
-          </script>
-
-        <iframe max-width="315" height="215" src="https://www.youtube.com/embed/5B1S9KoLXVM" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://player.vimeo.com/video/178267093" max-width="315" height="215" frameborder="0" allowfullscreen></iframe>
-        <iframe max-width="315" height="215" src="https://www.youtube.com/embed/isDL2VYXEsA" frameborder="0" allowfullscreen></iframe>
-        <iframe max-width="315" height="215" src="https://clyp.it/4x5wd1cy/widget" frameborder="0"></iframe>
-
-      </section>
+        <iframe style="border:0px;width:100%;height:" src="content/ideas.htm" scrolling="no" onload="resizeIframe(this)" ></iframe>
+        </section>
   </div>
 </div>
 
 <div class="footer">
   <a class="dif" href="ideario.apk" style="font-size:150%" download> Descargar App</a>
 </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
 </body>
 </html>
