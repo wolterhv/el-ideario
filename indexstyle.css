@@ -55,7 +55,9 @@ a.dif {
   color: #000;
   background-color: #DFDFDF;
   text-align: center;
-  outline: 1px solid #797979;
+  border: solid 1px #797979;
+  border-radius: 7px;
+
 }
 
 a.dif.active, a.dif:hover{
