@@ -4,7 +4,10 @@
 <title>El Ideario</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="addtohomescreen.css">
+<script src="addtohomescreen.js"></script>
 <link rel="stylesheet" href="indexstyle.css">
   <script>
   function resizeIframe(obj) {
@@ -35,7 +38,9 @@
 
       <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
       <br><br>
-      <a class="dif" style="font-size:120%" href="ideario2.apk" download >descarga el app</a>
+      <a class="dif" style="display:none" id="apk" href="ideario2.apk" download ></a>
+      <a class="dif" style="font-size:120%" onclick="AppSelector()" >descarga el app</a>
+
       <br><br>
         <script>
               function refreshIframe() {
@@ -47,6 +52,27 @@
 
   </div>
 </div>
+<script>
+function AppSelector() {
+if /* if we're on iOS, open in Apple Maps */
+  ((navigator.platform.indexOf("iPhone") != -1) ||
+   (navigator.platform.indexOf("iPad") != -1) ||
+   (navigator.platform.indexOf("iPod") != -1))
+  addToHomescreen({
+    startDelay:0
+    autostart
+  });
 
+var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+  if (isAndroid)
+  {
+    window.location.href = ("ideario2.apk");
+  }
+
+else /* else use Google */
+  window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+}
+</script>
 </body>
 </html>
