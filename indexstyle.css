@@ -11,6 +11,7 @@ body{
 }
 header {
   background-color:rgb(247, 247, 247,0.7);
+  background-color: white;
   max-width: 100%;
   color: black;
   text-align: center;
