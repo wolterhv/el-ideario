@@ -38,7 +38,8 @@ nav ul li:hover{
   background-color: #49F379;
 }
 section{
-  width: 100%
+  width: 100%;
+  background-color: #DFDFDF;
   margin: 0 auto;
 }
 .handle {
