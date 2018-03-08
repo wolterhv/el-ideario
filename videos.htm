@@ -14,6 +14,7 @@ function resizeIframe(obj) {
 <body>
     <header>
       <a href="index.htm"><img class="header" src="ideario.png" alt=header></a>
+      <p class="slogan" title="que es el ideario?">Plataforma de inteligencia colectiva<br> las ideas nos unen</p>
     </header>
     <nav style="font-family:sans;">
         <ul>
@@ -25,7 +26,7 @@ function resizeIframe(obj) {
 
 <div align=center>
   <div class="container">
-    <section style="height:300px">
+    <section style="height:100%;">
       <button class="accordion">Compartir mis ideas!</button>
         <div class="panel">
             <form id="form1" action="https://formspree.io/el-ideario@riseup.net" method="POST">
@@ -38,8 +39,8 @@ function resizeIframe(obj) {
           <a class="link" href="infopage.htm">+INFO</a>
           <p style="font-size:85%;font-family:monospace">todo video será publicado siempre y cuando sea compatible con los <a class="link" href="pilares.htm">pilares del Ideario</a></p>
         </div>
-        <iframe style="border:0px;width:100%;height:" src="content/ideas.htm" scrolling="no" onload="resizeIframe(this)" ></iframe>
-        </section>
+        <iframe style="border:0px;width:100%;" src="content/ideas.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
+    </section>
   </div>
 </div>
 
