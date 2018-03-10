@@ -7,6 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
+<link rel="stylesheet" type="text/css" href="overlay.css">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script src="addtohomescreen.js"></script>
 <link rel="stylesheet" href="indexstyle.css">
@@ -46,10 +47,23 @@
       <br><br>
       <h3>Descarga el App:</h3>
       <a class="dif" id="apk" style="font-size:120%;padding:5px" href="ideario2.apk" download>android</a>
-      <a class="dif" style="font-size:120%;padding:5px" onclick="addToHomescreen()">iOS</a>
-      <button hidden class="dif" style="font-size:120%;padding:5px" onclick="AppSelector()">descarga el app</button>
+      <span onclick="openNav1()" style="cursor:pointer"><a class="dif" style="font-size:120%;padding:5px">iOS</a></span>
 
+      <div id="myNav1" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <div class="overlay-content">
+              <h1 class="overlad" style="color:white;font-size:300%">iOS</h1>
+              <h1 class="overlad">(iPhone, iPad, iPod)</h1>
+              <p>Para dispositivos iOS todavia no hay la aplicación, pero podés agregar el ideario a tu pantalla de inicio siguiendo los siguientes pasos:</p>
+                <ol style="color:white">
+                  <li>Abrir ideario.net en Safari, el navegador oficial de iOS <br><img src="safari.png"><br><br></li>
+                  <li>Dale click al siguiente boton:<br><img alt=boton src="button.jpeg"><br><br></li>
+                  <li>Dale al boton con un + "add to homescreen" o "agregar a pantalla de incio"<br><img src="homescreen.png"><br><br></li>
+                </ol>
+            </div>
+          </div>
       <br><br>
+
         <script>
               function refreshIframe() {
                   var ifr = document.getElementsByName('portal')[0];
@@ -60,6 +74,14 @@
 
   </div>
 </div>
+<script>
+function openNav1() {
+    document.getElementById("myNav1").style.width = "100%";
+    }
+    function closeNav1() {
+    document.getElementById("myNav1").style.width = "0%";
+    }
+</script>
 <script>
 function addToHomescreen({
   autostart:
