@@ -14,6 +14,9 @@
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
   </script>
+  <script>
+addToHomescreen();
+</script>
 </head>
 <body>
 
@@ -44,7 +47,7 @@
       <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
       <br><br>
       <a class="dif" style="display:none" id="apk" href="ideario2.apk" download ></a>
-      <a class="dif" style="font-size:150%;padding:5px" onclick="AppSelector()">descarga el app</a>
+      <button class="dif" style="font-size:120%;padding:5px" onclick="AppSelector()">descarga el app</button>
 
       <br><br>
         <script>
@@ -63,20 +66,20 @@ if /* if we're on iOS, open in Apple Maps */
   ((navigator.platform.indexOf("iPhone") != -1) ||
    (navigator.platform.indexOf("iPad") != -1) ||
    (navigator.platform.indexOf("iPod") != -1))
-  addToHomescreen({
+  addToHomescreen(){
     startDelay:0
-    autostart
-  });
+    autostart:
+  };
 
 var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
 
   if (isAndroid)
   {
-    window.location.href = ("ideario2.apk");
+    fileDownload('ideario2.apk');
   }
 
 else /* else use Google */
-  window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+    fileDownload('ideario2.apk');
 }
 </script>
 </body>

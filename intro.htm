@@ -36,7 +36,7 @@
       <iframe width="100%" src="https://www.youtube.com/embed/K8YzioRmANk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <br>
-      <a class="dif" href="ideario-intro.pdf" download >Descargar el PDF</a>
+      <a class="dif"  style="font-size:150%;padding:5px" href="ideario-intro.pdf" download >Descargar el PDF</a>
       <br><br>
     </section>
 
@@ -55,9 +55,8 @@ if /* if we're on iOS, open in Apple Maps */
 
 var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
 
-  if (isAndroid)
-  {
-    window.location.href = ("ideario2.apk");
+  if (isAndroid){
+window.location = 'ideario2.apk';
   }
 
 else /* else use Google */

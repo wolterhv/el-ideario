@@ -49,7 +49,7 @@ a.link2{
   font-family: monospace;
 }
 
-a.dif {
+.dif {
   text-decoration: none;
   padding: 3px;
   color: #000;
@@ -57,10 +57,10 @@ a.dif {
   text-align: center;
   border: solid 1px #797979;
   border-radius: 7px;
-
 }
 
-a.dif.active, a.dif:hover{
+
+.dif.active, .dif:hover{
   background-color: rgb(98, 255, 121);
   color: #000;
 
