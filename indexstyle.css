@@ -252,6 +252,11 @@ img.pablo{
   height:130px;
 }
 
+audio{
+  width: 100%;
+  display:block;
+}
+
 @media screen and (max-width: 499px){
   .container{
     width: auto;
