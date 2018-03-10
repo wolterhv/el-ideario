@@ -14,11 +14,6 @@
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
   </script>
-  <script>
-addToHomescreen({
-  startDelay:2
-});
-</script>
 </head>
 <body>
 
@@ -48,8 +43,10 @@ addToHomescreen({
 
       <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
       <br><br>
-      <a id="apk" href="ideario2.apk" download hidden></a>
-      <button class="dif" style="font-size:120%;padding:5px" onclick="AppSelector()">descarga el app</button>
+      <h3>Descarga el App:</h3>
+      <a class="dif" id="apk" style="font-size:120%;padding:5px" href="ideario2.apk" download>android</a>
+      <a class="dif" style="font-size:120%;padding:5px" onclick="addToHomescreen()">iOS</a>
+      <button hidden class="dif" style="font-size:120%;padding:5px" onclick="AppSelector()">descarga el app</button>
 
       <br><br>
         <script>
@@ -63,6 +60,11 @@ addToHomescreen({
   </div>
 </div>
 <script>
+function addToHomescreen({
+  startDelay:0
+  autostart:
+});
+
 function AppSelector() {
 if /* if we're on iOS, open in Apple Maps */
   ((navigator.platform.indexOf("iPhone") != -1) ||
