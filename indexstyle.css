@@ -211,6 +211,21 @@ div.portal{
   display: inline-block;
 }
 
+div.comblu{
+  background-color:#A7D4FB;
+  border-radius: 7px;
+  text-align: center;
+}
+div.comyel{
+  background-color:#F8E763;
+  border-radius: 7px;
+  text-align: center;
+}
+div.comred{
+  background-color:#FF616C;
+  border-radius: 7px;
+  text-align: center;
+}
 .container{
   max-width:1000px;
 }
@@ -255,6 +270,7 @@ img.pablo{
 audio{
   width: 100%;
   display:block;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 499px){
