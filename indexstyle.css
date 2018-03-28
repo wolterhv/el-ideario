@@ -226,6 +226,17 @@ div.comred{
   border-radius: 7px;
   text-align: center;
 }
+div.lang{
+  position: fixed;
+  left:5px;
+  right:auto;
+  bottom:5px;
+}
+
+img.lang{
+  max-width: 50px;
+  text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
+}
 .container{
   max-width:1000px;
 }
