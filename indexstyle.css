@@ -192,13 +192,16 @@ button.accordion2.active, button.accordion2:hover {
 button.caos{
   display: inline-block;
   background:#62FF79;
-  padding: 0px;
-  border: solid 1px #62FF79;
+  padding-bottom: 0px;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: solid 0px #62FF79;
   border-radius: 40px;
 }
 button.caos:hover{
-  background-color:#62FFA7;
-  border: solid 1px #000;
+  background-color:#EA69F2;
+  border: solid 0px #000;
 }
 
 div.panel {
@@ -209,6 +212,16 @@ div.panel {
 
 div.portal{
   display: inline-block;
+}
+div.portal2{
+  background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+border-radius: 10px;
 }
 
 div.comblu{
@@ -237,6 +250,7 @@ img.lang{
   max-width: 50px;
   text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
 }
+
 .container{
   max-width:1000px;
 }
