@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>El Ideario</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="1200">
-<link rel="stylesheet" type="text/css" href="addtohomescreen.css">
-<link rel="stylesheet" type="text/css" href="overlay.css">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<script src="addtohomescreen.js"></script>
-<link rel="stylesheet" href="indexstyle.css">
-  <script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-  </script>
+    <title>El Ideario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="1200">
+    <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
+    <link rel="stylesheet" type="text/css" href="overlay.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="addtohomescreen.js"></script>
+    <link rel="stylesheet" href="indexstyle.css">
+      <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+      </script>
 </head>
 <body>
 
@@ -50,9 +50,14 @@
           <br><button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:">
         </div>
         <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
+        <!-- COUNTER: BEGIN -->
+        <div style="background-color:#242424;border-radius:7px;border:1px solid black;padding:4px;;align:center">
+        <a target='_blank' style='font-family:monospace;text-decoration:none;color:#00FF76;'>Personas en línea: </a><a id='lnolt_' style='font-family:monospace;text-decoration:none;color:#00FF76'>
+        <script language='JavaScript' src='http://blogutils.net/olct/online.php?site=ideario.net&interval=600'></script></a>
+        </div>
+        <!-- COUNTER: END -->
       </div>
-
-      <br><br>
+      <br>
       <h3>Descarga el App:</h3>
       <a class="dif" id="apk" style="font-size:120%;padding:5px" href="ideario2.apk" download>android</a>
       <span onclick="openNav1()" style="cursor:pointer"><a class="dif" style="font-size:120%;padding:5px">iOS</a></span>
@@ -70,9 +75,9 @@
                 </ol>
             </div>
           </div>
-      <br><br>
 
-      <p style="color:grey;font-size:90%" id="counter"><span id="userCount">#</span> Usuaries en línea</p>
+
+
 
     </section>
 
