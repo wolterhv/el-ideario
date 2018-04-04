@@ -223,22 +223,37 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
 background-color:#282828;
 background-size:16px 16px;
 border-radius: 10px;
+margin-top: 15px;
 }
 
 div.comblu{
   background-color:#A7D4FB;
   border-radius: 7px;
   text-align: center;
+
 }
 div.comyel{
   background-color:#F8E763;
   border-radius: 7px;
   text-align: center;
+
 }
 div.comred{
   background-color:#FF616C;
   border-radius: 7px;
   text-align: center;
+}
+div.comgris{
+  background-color:#282828;
+  color: #00FF76;
+  font-family: monospace;
+  border-radius: 7px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:0px;
+  text-align: left;
+  font-size: 120%;
 }
 div.lang{
   position: fixed;

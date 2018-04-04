@@ -17,6 +17,12 @@
         obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
       }
       </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -43,23 +49,17 @@
         <audio controls>
           <source src="audio/comunikdo.mp3" type="audio/mpeg">
         </audio>
-      </div><br>
+      </div>
+      <div class="comgris"><div id="auto"></div></div>
 
       <div class="portal2">
         <div class="portal">
           <br><button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:">
         </div>
         <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
-        <iframe width="100%" height="35px" style="border:0px;" name="online" src="online.htm" scrolling="no"></iframe>
-
-        <!-- COUNTER: BEGIN -->
-        <div hidden style="background-color:#242424;border-radius:7px;border:1px solid black;padding:4px;;align:center">
-        <a target='_blank' style='font-family:monospace;text-decoration:none;color:#00FF76;'>Personas en línea: </a><a id='lnolt_' style='font-family:monospace;text-decoration:none;color:#00FF76'>
-        <script language='JavaScript' src='http://blogutils.net/olct/online.php?site=ideario.net&interval=600'></script></a>
-        </div>
-        <!-- COUNTER: END -->
-
+        <iframe id="online" width="100%" height="35px" style="border:0px;" name="online" src="online.htm" scrolling="no"></iframe>
       </div>
+
       <br>
       <h3>Descarga el App:</h3>
       <a class="dif" id="apk" style="font-size:120%;padding:5px" href="ideario2.apk" download>android</a>
@@ -79,23 +79,17 @@
             </div>
           </div>
       <br><br>
-
-
-
     </section>
   </div>
 </div>
 
 
-
 <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="my_script.js"></script>
-
 <script>
-window.setInterval("reloadIFrame();", 30);
-
+window.setInterval("reloadIFrame();", 15000);
 function reloadIFrame() {
- document.frames["online"].location.reload();
+ document.getElementById("online").src="online.htm";
 }
 </script>
 <script>
