@@ -51,14 +51,19 @@
       </div>
       <div class="comgris"><div id="auto"></div></div>
 
-              <iframe src="https://tlk.io/ideario" style="border:none;width:100%;height:250px;"></iframe>
+
+      <button class="accordion3">CHAT</button>
+      <div class="panel">
+        <iframe src="https://tlk.io/ideario" style="border:none;width:100%;height:300px;"></iframe>
+      </div>
+
 
       <div class="portal2">
+        <iframe id="online" width="100%" height="35px" style="border:0px;" name="online" src="online.htm" scrolling="no"></iframe>
         <div class="portal">
           <br><button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:">
         </div>
         <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
-        <iframe id="online" width="100%" height="35px" style="border:0px;" name="online" src="online.htm" scrolling="no"></iframe>
       </div>
 
       <br>
@@ -84,7 +89,22 @@
   </div>
 </div>
 
+<script>
+var acc = document.getElementsByClassName("accordion3");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
 <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="my_script.js"></script>
 <script>

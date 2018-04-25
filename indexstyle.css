@@ -194,6 +194,25 @@ button.accordion2.active, button.accordion2:hover {
     color: #000;
     font-style: oblique;
 }
+
+button.accordion3 {
+  display: inline-block;
+  background:#62FF79;
+  padding: 5px;
+  font-family:arial;
+  font-weight: bold;
+  font-size: 135%;
+  color: #008F15;
+  border: solid 1px #62FF79;
+  border-radius: 10px;
+    transition: 0.4s;
+}
+
+button.accordion3.active, button.accordion3:hover {
+  background-color:#62FFA7;
+  border: solid 1px #008F15;
+}
+
 button.caos{
   display: inline-block;
   background:#62FF79;
