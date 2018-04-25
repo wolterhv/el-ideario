@@ -57,7 +57,7 @@ a.link2{
   background-color: #62FF79;
   text-align: center;
   border: solid 0px #797979;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 
@@ -79,7 +79,7 @@ nav ul li {
   display: inline-block;
   background:#62FF79;
   padding: 5px;
-  font-family: arial;
+  font-family:arial;
   font-size: 135%;
   color: #008F15;
   border: solid 1px #62FF79;
