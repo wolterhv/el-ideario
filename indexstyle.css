@@ -51,19 +51,19 @@ a.link2{
 
 .dif {
   text-decoration: none;
-  padding: 3px;
-  color: #000;
-  background-color: #DFDFDF;
+  padding: 6px;
+  color: #008F15;
+  font-weight: bold;
+  background-color: #62FF79;
   text-align: center;
-  border: solid 1px #797979;
-  border-radius: 7px;
+  border: solid 0px #797979;
+  border-radius: 15px;
 }
 
 
 .dif.active, .dif:hover{
-  background-color: rgb(98, 255, 121);
-  color: #000;
-
+  background-color:#62FFA7;
+  border: solid 1px #008F15;
 }
 
 nav ul{
@@ -80,17 +80,21 @@ nav ul li {
   background:#62FF79;
   padding: 5px;
   font-family: arial;
+  font-size: 135%;
+  color: #008F15;
   border: solid 1px #62FF79;
   border-radius: 10px;
 
 }
 nav ul li:hover{
   background-color:#62FFA7;
-  border: solid 1px #000;
+  border: solid 1px #008F15;
 }
 
 nav ul li.active{
-  border: solid 1px #000;
+  border: solid 1px #008F15;
+  font-weight: bold;
+  background-color: #2EFF4D;
 }
 section{
   text-align: center;
@@ -349,7 +353,10 @@ audio{
     max-width: 280px;
   }
   nav ul li{
-    font-size: 85%;
+    font-size: 115%;
+  }
+  nav ul li.active{
+    ;
   }
   p.slogan{
     font-size:90%;
