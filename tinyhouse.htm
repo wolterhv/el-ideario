@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Crowdfunding - Tiny House</title>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="overlay.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="crowdfund.css">
       <script>
       function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
@@ -23,16 +25,18 @@
 </head>
 
 <body>
+  <header>
+  </header>
 <div style="margin-top:15px;background:white;width:100%">
 <h1>Ayuda a Papus con su Tiny House</h1>
 <h3 style="color:gray">Financiamiento Colectivo - Crowdfunding</h3>
 </div>
 
   <div align=center>
-    <div class="container2">
+    <div class="container3">
       <section>
         <div class="video-container">
-
+<img src="img/videofake.png" style="max-width:100%" alt="video">
         </div>
         <table style="width:95%">
          <tr>
@@ -41,8 +45,8 @@
            <th style="text-align:right">Meta</th>
          </tr>
          <tr>
-           <td style="text-align:left">$0</td>
-           <td style="text-align:left">$0</td>
+           <td style="text-align:left">$224</td>
+           <td style="text-align:left">$176</td>
            <td style="text-align:right">$400</td>
          </tr>
          <tr hidden>
@@ -53,36 +57,70 @@
         </table>
 
         <div style="border:1px solid gray;border-radius:10px;width:95%;height:30px">
-          <div style="background:#62FF79;border-radius:10px;height:30px;width:15%;">15%</div>
+          <div style="background:#EA69F2;border-radius:10px;height:30px;width:56%;">56%</div>
         </div>
 
-         <div class="w3-grey" style="height:24px;width:20%"></div>
-<div style="text-align:left">
-<h3 style="color:gray">Donar con Paypal:</h3>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_donations">
-        <input type="hidden" name="business" value="ARMB2374K6HYN">
-        <input type="hidden" name="lc" value="GB">
-        <input type="hidden" name="item_name" value="Pablo Hellmund - tiny house">
-        <input type="hidden" name="no_note" value="0">
-        <input type="hidden" name="cn" value="Comentario (opcional):">
-        <input type="hidden" name="no_shipping" value="1">
-        <input type="hidden" name="rm" value="1">
-        <input type="hidden" name="return" value="http://ideario.net/gracias">
-        <input type="hidden" name="cancel_return" value="http://ideario.net/cancel">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-        </form>
+        <br>
+        <button class="accordion3">Donar</button>
+          <div style="text-align:left" class="panel">
+            <div class="row11">
+              <div class="column11">
+                <h2 style="color:#008F15">PayPal:</h2>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_donations">
+                        <input type="hidden" name="business" value="ARMB2374K6HYN">
+                        <input type="hidden" name="lc" value="GB">
+                        <input type="hidden" name="item_name" value="Pablo Hellmund - tiny house">
+                        <input type="hidden" name="no_note" value="0">
+                        <input type="hidden" name="cn" value="Comentario (opcional):">
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input type="hidden" name="rm" value="1">
+                        <input type="hidden" name="return" value="http://ideario.net/gracias">
+                        <input type="hidden" name="cancel_return" value="http://ideario.net/cancel">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                </div>
+              <div class="column22" style="font-size:85%" >
+                <h2 style="color:#008F15">Transferencia/Deposito:</h2>
 
-<h3 style="color:gray">por Transferencia o Depósito:</h3>
-<p><strong>Cuenta Cliente (Scotiabank):</strong>12300120066531007</p>
-<p><strong>Recipiente:</strong> Pablo Hellmund Vega</p>
-</div>
+                <p style="text-decoration:underline;color:#C70500"><strong>Scotiabank Costa Rica:</strong></p>
+                <div style="color:gray">
+                <p><strong>Cuenta Cliente (Colones):</strong>12300120066531007</p>
+                <p><strong>Cuenta Cliente (Dolares):</strong>12300120066531013</p>
+                <p><strong>Beneficiario:</strong> Pablo Hellmund Vega</p>
+                <p><strong>Identificacion:</strong>115350156</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+              <div style="text-align:left">
+                <h3>Informacion General</h3>
+                <p class="gray">Aqui informacion describiendo en uso de los fondos y etc..... dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              </div>
       </section>
       </div>
     </div>
 
+    <script>
+    var acc = document.getElementsByClassName("accordion3");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+    </script>
 </body>
 </html>
