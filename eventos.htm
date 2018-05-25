@@ -6,6 +6,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
 <link rel="stylesheet" href="indexstyle.css">
+<link rel="stylesheet" href="loader.css">
+<link rel="script" href="jquery-1.9.0.min.js">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 <link rel="manifest" href="img/favicon/site.webmanifest">
@@ -26,8 +28,9 @@
           </ul>
     </nav>
 <div align=center>
-  <div class="container">
-    <div data-tockify-component="calendar" data-tockify-calendar="el.ideario"></div>
+  <div class="container" style="background:url(img/loading.gif) center center no-repeat;">
+    <div class="loader" id="loader" hidden></div>
+    <div data-tockify-component="calendar" data-tockify-calendar="el.ideario" id="calendar"></div>
     <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
   <br>
   <a class="dif" href="https://tockify.com/tkf2/submitEvent/424f89bbac1e4c81ac643941ba162659" target="_blank" style="font-size:120%">+ agregar un evento</a>
@@ -39,5 +42,10 @@
   <a href="index.htm"><img src="img/globe.png" alt=portal class="lang"></a>
 </div>
 
+<script>
+$("#calendar").load(function() {
+   $('#loader').hide();
+})
+</script>
 </body>
 </html>
