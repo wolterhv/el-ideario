@@ -33,6 +33,20 @@ p.gray{
     clear: both;
 }
 
+.lengua {
+  border: solid 1px gray;
+  border-radius: 5px;
+  background:white;
+  color:gray;
+  width: 100px;
+  padding:5px;
+}
+
+.lengua:hover {
+  border: solid 1px black;
+  color:black;
+}
+
 @media screen and (max-width: 499px){
 
 .column11 {
