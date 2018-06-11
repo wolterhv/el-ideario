@@ -6,6 +6,13 @@ p.gray{
     font-size: 110%;
 }
 
+a:link{
+  color:blue;
+}
+
+a:visited{
+  color:purple;
+}
 .container3{
   max-width:700px;
   height: 100%;
