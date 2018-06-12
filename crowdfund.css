@@ -6,11 +6,11 @@ p.gray{
     font-size: 110%;
 }
 
-a:link{
+a.asd:link{
   color:blue;
 }
 
-a:visited{
+a.asd:visited{
   color:purple;
 }
 .container3{
