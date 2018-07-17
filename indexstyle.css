@@ -167,6 +167,9 @@ h2 {
     display: table;
     clear: both;
 }
+button {
+    outline: 0 !important;
+}
 button.accordion {
     background-color: rgb(223, 223, 223, 0.8);
     color: #000;
