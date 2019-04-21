@@ -1,0 +1,55 @@
+CHAT:
+
+<button class="accordion3">CHAT</button>
+      <div class="panel">
+        <iframe src="https://tlk.io/ideario" style="border:none;width:100%;height:300px;"></iframe>
+      </div>
+
+PORTAL INDEX:
+
+<div class="portal2">
+        <iframe id="online" width="100%" height="35px" style="border:0px;" name="online" src="online.htm" scrolling="no"></iframe>
+        <div class="portal">
+          <br><button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:">
+        </div>
+        <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
+      </div>
+
+
+SCRIPTS
+
+<script>
+window.setInterval("reloadIFrame();", 15000);
+function reloadIFrame() {
+ document.getElementById("online").src="online.htm";
+}
+</script>
+
+
+<script>
+function addToHomescreen({
+  autostart:
+});
+{}
+
+function AppSelector() {
+if /* if we're on iOS, open in Apple Maps */
+  ((navigator.platform.indexOf("iPhone") != -1) ||
+   (navigator.platform.indexOf("iPad") != -1) ||
+   (navigator.platform.indexOf("iPod") != -1))
+  addToHomescreen({
+    startDelay:0
+    autostart:
+  });
+
+var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+  if (isAndroid)
+  {
+    document.getElementById('apk').click();
+  }
+
+else /* else use Google */
+    document.getElementById('apk').click();
+}
+</script>
