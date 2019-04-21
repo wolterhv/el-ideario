@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>El Ideario</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="indexstyle.css">
+<script>
+function resizeIframe(obj) {
+  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
+</script>
+</head>
+<body>
+    <header>
+      <a href="index.htm"><img class="header" src="ideario.png" alt=header></a>
+      <p class="slogan" title="que es el ideario?">Plataforma de inteligencia colectiva<br> las ideas nos unen</p>
+    </header>
+    <nav style="font-family:sans;">
+        <ul>
+            <a href="videos.htm" ><li class="active">V.ide@s</li></a>
+            <a href="eventos.htm"><li>Eventos</li></a>
+            <a href="conversacion.htm"><li>Conversa</li></a>
+          </ul>
+    </nav>
+
+<div align=center>
+  <div class="container">
+    <section style="height:100%;padding-left:0px">
+      <button class="accordion3">subir una idea!</button>
+        <div class="panel">
+            <form id="form1" action="https://formspree.io/el-ideario@riseup.net" method="POST">
+              Pegar aquí la dirección URL de tu video/audio:<br>
+              <input type="url" name="videourl">
+              <br>
+              <input type="submit" value="Enviar">
+            </form>
+
+          <a class="link" href="infopage.htm">+INFO</a>
+          <p style="font-size:85%;font-family:monospace">todo video será publicado siempre y cuando sea compatible con los <a class="link" href="pilares.htm">pilares del Ideario</a></p>
+        </div>
+
+        <iframe style="border:0px;width:100%;" src="content/ideas.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
+
+    </section>
+  </div>
+</div>
+
+
+<div class="lang">
+  <a href="index.htm"><img src="img/globe.png" alt=portal class="lang"></a>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion3");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</body>
+</html>

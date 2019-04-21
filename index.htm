@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
     <link rel="stylesheet" type="text/css" href="overlay.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <script src="addtohomescreen.js"></script>
     <link rel="stylesheet" href="indexstyle.css">
       <script>
       function resizeIframe(obj) {
@@ -31,16 +30,18 @@
     </header>
     <nav style="font-family:sans;">
         <ul>
-          <a href="conversacion.htm"><li>Nodos</li></a>
+          <a href="nexos.htm"><li>Nexos</li></a>
             <a href="eventos.htm"><li>Eventos</li></a>
-            <a href="videos.htm"><li>Ideas</li></a>
+            <a href="ideas.htm"><li>Ideas</li></a>
         </ul>
     </nav>
 
 <div align=center>
   <div class="container2">
     <section>
-      <br>
+      <div class="comgris"><div id="auto"></div></div>
+      <div class="comgris"><div id="auto">esta aplicación se encuentra en proceso de modificación para su segunda etapa </div></div>
+
       <div class="compur">
         <strong>Aprendizaje:</strong>
         <br>introducción a la permacultura - Guido Barrientos
@@ -48,15 +49,8 @@
           <source src="audio/permaculturabarrientos.mp3" type="audio/mpeg">
         </audio>
       </div>
-<<<<<<< HEAD
-=======
-      <div class="comgris"><div id="auto">en este momento estamos re-estructurando la plataforma para activar su segunda etapa  funcionamiento</div></div>
->>>>>>> fe1c27763bf61dbaa74602c02c14c681e9f8abba
 
-
-
-
-<div style="text-align:left">
+    <div style="text-align:left">
         <button class="accordion2">Que es el Ideario?</button>
           <div class="panel">
 
@@ -107,8 +101,6 @@
 
       </div>
 
-      <div class="comgris"><div id="auto">caca de perro hemos estado trabajando ajsdasdjasdjasdj</div></div>
-
       <br>
       <h3>Descarga el App:</h3>
       <a class="dif" id="apk" style="font-size:130%;padding:5px" href="ideario.apk" download>android</a>
@@ -133,7 +125,7 @@
 </div>
 
 <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
-<script type="text/javascript" src="my_script.js"></script>
+
 <script>
 var acc = document.getElementsByClassName("accordion3");
 var i;
@@ -150,11 +142,7 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 </script>
-<<<<<<< HEAD
 
-=======
-<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
->>>>>>> fe1c27763bf61dbaa74602c02c14c681e9f8abba
 <script>
 var acc = document.getElementsByClassName("accordion2");
 var i;
@@ -173,12 +161,6 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 <script>
-      function refreshIframe() {
-          var ifr = document.getElementsByName('portal')[0];
-          ifr.src = ifr.src;
-      }
-</script>
-<script>
 function openNav1() {
     document.getElementById("myNav1").style.width = "100%";
     }
@@ -186,37 +168,8 @@ function openNav1() {
     document.getElementById("myNav1").style.width = "0%";
     }
 </script>
-<<<<<<< HEAD
 
-=======
-<script>
-function addToHomescreen({
-  autostart:
-});
-{}
+<script type="text/javascript" src="my_script.js"></script>
 
-function AppSelector() {
-if /* if we're on iOS, open in Apple Maps */
-  ((navigator.platform.indexOf("iPhone") != -1) ||
-   (navigator.platform.indexOf("iPad") != -1) ||
-   (navigator.platform.indexOf("iPod") != -1))
-  addToHomescreen({
-    startDelay:0
-    autostart:
-  });
-
-var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
-
-  if (isAndroid)
-  {
-    document.getElementById('apk').click();
-  }
-
-else /* else use Google */
-    document.getElementById('apk').click();
-}
-</script>
-    <script type="text/javascript" src="my_script.js"></script>
->>>>>>> fe1c27763bf61dbaa74602c02c14c681e9f8abba
 </body>
 </html>

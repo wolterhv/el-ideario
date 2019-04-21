@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Ideario</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="indexstyle.css">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+  <header>
+    <a href="index.htm"><img class="header" src="img/ideario.png" alt=header></a>
+    <p class="slogan" title="que es el ideario?">Plataforma de inteligencia colectiva<br> las ideas nos unen</p>
+  </header>
+  <nav style="font-family:sans;">
+      <ul>
+        <a href="nexos.htm"><li>Nexos</li></a>
+          <a href="eventos.htm"><li>Eventos</li></a>
+          <a href="ideas.htm"><li>Ideas</li></a>
+      </ul>
+  </nav>
+
+    <div align="center">
+      <div class="container2">
+            <section style="text-align:left">
+
+               <h1>Nexos</h1>
+              <p style="font-family:monospace;color:#484546"></p>
+
+              <div hidden class="row">
+                <div class="column1" style="background-color:#CCCCCC;">
+                  <h2>Temas:</h2>
+                  <hr>
+                  <ul>
+
+                  </ul>
+                  </div>
+                <div class="column2" style="background-color:#bbb;">
+                  <h2>Zonas:</h2>
+                  <hr>
+                    <ul>
+
+                    </ul>
+                </div>
+              </div>
+
+            </section>
+
+      </div>
+    </div>
+
+    <div class="lang">
+      <a href="index.htm"><img src="img/globe.png" alt=portal class="lang"></a>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+    </script>
+    <script type="text/javascript" src="my_script.js"></script>
+</body>
+</html>

@@ -15,8 +15,16 @@ PORTAL INDEX:
         <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
       </div>
 
+TOCKIFY
+<div hidden data-tockify-component="calendar" data-tockify-calendar="el.ideario" id="calendar"></div>
+<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 
-SCRIPTS
+<a hidden class="dif" href="https://tockify.com/tkf2/submitEvent/424f89bbac1e4c81ac643941ba162659" target="_blank" style="font-size:120%">+ agregar un evento</a>
+
+LOADER DIV
+<div class="loader" id="loader">    </div>
+
+----------------SCRIPTS------------
 
 <script>
 window.setInterval("reloadIFrame();", 15000);
@@ -52,4 +60,13 @@ var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
 else /* else use Google */
     document.getElementById('apk').click();
 }
+</script>
+
+PORTAL
+
+<script>
+      function refreshIframe() {
+          var ifr = document.getElementsByName('portal')[0];
+          ifr.src = ifr.src;
+      }
 </script>
