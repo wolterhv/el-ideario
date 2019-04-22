@@ -1,0 +1,38 @@
+
+        <fieldset>
+          <h4>Región (dentro del GAM):</h4>
+          <div class="checkbox">
+            <input type="checkbox" value=".este"/>
+            <label>San José Este</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value=".oeste"/>
+            <label>San José Oeste</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value=".cartago"/>
+            <label>Cartago</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value=".heredia"/>
+            <label>Heredia</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value=".alajuela"/>
+            <label>Alajuela</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <h4>Contexto</h4>
+          <div class="checkbox">
+            <input type="checkbox" value=".rur"/>
+            <label>Rural</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" value=".urb"/>
+            <label>Urbano</label>
+          </div>
+        </fieldset>

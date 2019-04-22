@@ -22,9 +22,9 @@ button{
   vertical-align: top;
   padding: .4em .8em;
   margin: 0;
-  background: #68b8c4;
+  background: #14FF38;
   border: 0;
-  color: #333;
+  color: #000;
   font-size: 16px;
   font-weight: 700;
   border-radius: 4px;
@@ -88,7 +88,7 @@ fieldset{
   width: 18px;
   height: 18px;
   margin-right: 10px;
-  background: white;
+  background: #000;
   border: 1px solid gray;
   border-radius: 3px;
 }
@@ -111,7 +111,7 @@ fieldset{
 }
 
 .checkbox input:focus ~ label:before{
-  background: white;
+  background: #000;
 }
 
 /**
