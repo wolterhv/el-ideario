@@ -153,6 +153,23 @@ input[type=text], select {
 h2 {
   font-size: 110%
 }
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 90%;
+}
+
+td, th{
+      border: 1px solid #000;
+      text-align: left;
+      padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: ;
+}
+
 .column1 {
     float: left;
     padding: 10px;
