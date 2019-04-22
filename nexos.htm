@@ -7,6 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta charset="utf-8">
 <link rel="stylesheet" href="indexstyle.css">
+<link rel="stylesheet" href="filter/filter.css">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 <link rel="manifest" href="img/favicon/site.webmanifest">
@@ -22,7 +23,7 @@
   </header>
   <nav style="font-family:sans;">
       <ul>
-        <a href="nexos.htm"><li>Nexos</li></a>
+        <a href="nexos.htm"><li class="active">Nexos</li></a>
           <a href="eventos.htm"><li>Eventos</li></a>
           <a href="ideas.htm"><li>Ideas</li></a>
       </ul>
@@ -32,8 +33,110 @@
       <div class="container2">
             <section style="text-align:left">
 
-               <h1>Nexos</h1>
-              <p style="font-family:monospace;color:#484546"></p>
+               <h1 hidden >Nexos</h1>
+              <p style="font-family:monospace;color:#484546">En Costa Rica hay muchas iniciativas ciudadanas que actúan para transformar la sociedad y encontrar soluciones en diferentes líneas de acción.
+Aquí usted se puede enterar sobre éstas, lo que hacen, y les puede contactar para involucrarse en el cambio.</p>
+
+<button class="accordion3">Lineas de Acción</button>
+  <div class="panel">
+              <form class="controls" id="Filters">
+                <fieldset>
+                  <h4>Líneas de Acción</h4>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".liba"/>
+                    <label>Liberación Animal</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".ecol"/>
+                    <label>Ecología y naturaleza</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".econ"/>
+                    <label>Economía Solidaria</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".gene"/>
+                    <label>Género</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".solu"/>
+                    <label>Soluciones Tecnológicas</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".movi"/>
+                    <label>Movilidad y Urbanismo</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".cult"/>
+                    <label>Cultura Libre</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".buen"/>
+                    <label>Buen Vivir + Alternativas de vida</label>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <h4>Región (dentro del GAM):</h4>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".este"/>
+                    <label>San José Este</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".oeste"/>
+                    <label>San José Oeste</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".cartago"/>
+                    <label>Cartago</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".heredia"/>
+                    <label>Heredia</label>
+                  </div>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".alajuela"/>
+                    <label>Alajuela</label>
+                  </div>
+
+                </fieldset>
+
+                <fieldset>
+                  <h4>Contexto</h4>
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".rur"/>
+                    <label>Rural</label>
+                  </div>
+
+                  <div class="fcheckbox">
+                    <input type="fcheckbox" value=".urb"/>
+                    <label>Urbano</label>
+                  </div>
+                </fieldset>
+
+                <button id="Reset">Quitar Filtros</button>
+                </form>
+
+            </div>
+
+                <div id="Container" class="containersh">
+                  <div class="fail-message"><span>Ninguna iniciativa calza con todos los filtros seleccionados</span></div>
+
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+
+
+                  <div class="gap"></div>
+                  <div class="gap"></div>
+                  <div class="gap"></div>
+                  <div class="gap"></div>
+                </div>
 
               <div hidden class="row">
                 <div class="column1" style="background-color:#CCCCCC;">
@@ -78,5 +181,22 @@
     }
     </script>
     <script type="text/javascript" src="my_script.js"></script>
+    <script type="text/javascript" src="filter/filter.js"></script>
+    <script>
+    var acc = document.getElementsByClassName("accordion3");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+    </script>
 </body>
 </html>
