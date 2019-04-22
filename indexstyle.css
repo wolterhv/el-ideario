@@ -47,7 +47,12 @@ a.link{
 
 a.link2{
   text-decoration: none;
-  color: #1A0DB2;
+  font-size: 110%;
+  background-color: #484546;
+  border-radius:3px;
+  padding: 5px;
+  margin-top:5px;
+  color: #14FF38;
   font-family: monospace;
     outline: 0 !important;
 }
