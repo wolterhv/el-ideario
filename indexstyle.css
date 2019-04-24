@@ -57,6 +57,22 @@ a.link2{
     outline: 0 !important;
 }
 
+a.filtro{
+  padding: 6px;
+  color: white;
+  margin:3px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 90%;
+  border: solid 1px white;
+  border-radius: 13px;
+}
+
+a.filtro:hover, a.filtro.active{
+  background-color:#484546;
+  border: solid 1px #62FF79;
+  color: #62FF79;
+}
 .dif {
   text-decoration: none;
   padding: 6px;
@@ -271,6 +287,18 @@ button.caos:hover{
   background-color:#EA69F2;
   border: solid 0px #000;
   transition: 1s;
+}
+
+div.filtrodiv {
+  background-color: #797979;
+  border-radius: 15px;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding-top:0px;
+  padding: 5px;
+  height:75px;
+  font-weight: bold;
 }
 
 div.panel {

@@ -116,6 +116,7 @@ section{
   border-radius: 9px;
   padding: 0.1px 10px;
   margin:0;
+  margin-top: 10px;
 }
 
 input[type=submit] {
@@ -256,8 +257,9 @@ button.accordion3 {
 }
 
 button.accordion3.active, button.accordion3:hover {
-  background-color:#62FFA7;
-  border: solid 1px #008F15;
+  background-color:#FF62E8;
+  border: solid 1px #8F007A;
+  color: #8F007A;
 }
 
 button.caos{
@@ -276,6 +278,7 @@ button.caos:hover{
   border: solid 0px #000;
   transition: 1s;
 }
+
 div.redes{
   display: inline-block;
   margin-top: 15px;
@@ -337,18 +340,15 @@ div.comgris{
   text-align: left;
   font-size: 120%;
 }
-div.lang{
+div.back{
   position: fixed;
-  right:10px;
+  right:29%;
   left:auto;
-  bottom:10px;
-  background-color:#14FF38;
-  font-weight: bold;
-  border-radius: 50px;
-  font-size: 200%;
+  top:20px;
+  max-width: 20px;
 }
 
-img.lang{
+img.back{
   max-width: 50px;
   text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
 }
@@ -408,6 +408,16 @@ audio{
   width: 100%;
   display:block;
   border-radius: 4px;
+}
+@media screen and (max-width: 620px){
+  div.back{
+    right:40px;
+    top:10px;
+    }
+
+  section {
+    margin-top: 0px  ;
+  }
 }
 
 @media screen and (max-width: 499px){

@@ -35,10 +35,17 @@
             <section style="text-align:left">
 
                <h1 hidden >Nexos</h1>
-              <p style="font-family:monospace;color:#484546">En Costa Rica hay muchas iniciativas ciudadanas que actúan para transformar la sociedad y encontrar soluciones en sus diferentes líneas de acción.
+              <p style="font-family:monospace;color:#484546">En Costa Rica hay muchas <strong>iniciativas ciudadanas</strong> que actúan para transformar la sociedad y encontrar soluciones en sus diferentes líneas de acción.
 Aquí usted se puede enterar sobre éstas, lo que hacen, y les puede contactar para involucrarse en el cambio.</p>
 
-<span onclick="openNav1()" style="cursor:pointer"><a class="dif" style="font-size:130%;padding:5px">Líneas de Acción</a></span>
+<div align="center" class="filtrodiv">
+  <p>Filtrar por:</p>
+    <div style="display:inline-block">
+    <span onclick="openNav1()" style="cursor:pointer"><a class="filtro" >Línea de Acción</a></span>
+    <span onclick="openNav2()" style="cursor:pointer"><a class="filtro" >Localidad</a></span>
+  </div>
+</div>
+
 
   <div id="myNav1" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
@@ -82,8 +89,7 @@ Aquí usted se puede enterar sobre éstas, lo que hacen, y les puede contactar p
             <label>Buen Vivir + Alternativas de vida</label>
           </div>
         </fieldset>
-
-        <button id="Reset">Quitar Filtros</button>
+<button id="Reset">Quitar Filtros</button>
         </form>
     </div>
   </div>
