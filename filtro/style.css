@@ -1,0 +1,16 @@
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none;
+  width: auto;
+  height: auto;
+  margin: 15px;
+  background: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}

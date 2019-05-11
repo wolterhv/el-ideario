@@ -15,6 +15,103 @@ PORTAL INDEX:
         <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
       </div>
 
+FILTROs
+
+<div align="center" class="filtrodiv">
+  <p>Filtrar por:</p>
+    <div style="display:inline-block">
+
+    <span onclick="openNav1()" style="cursor:pointer"><a class="filtro" >Línea de Acción</a></span>
+    <span onclick="openNav2()" style="cursor:pointer"><a class="filtro" >Localidad</a></span>
+  </div>
+</div>
+
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="overlay-content">
+    <h1 class="overlad" style="color:#14FF38;font-size:180%">Filtro:</h1>
+    <h1 hidden class="overlad">Lineas de Acción - Zona</h1>
+    <p style="color:#14FF38">Filtre las iniciativas por categoría de <u>Línea de acción:</u></p>
+
+    <form class="controls" id="Filters">
+      <fieldset>
+        <div class="checkbox">
+          <input type="checkbox" value=".liba"/>
+          <label>Liberación Animal</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".ecol"/>
+          <label>Ecología y naturaleza</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".econ"/>
+          <label>Economía Solidaria</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".gene"/>
+          <label>Género</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="checkbox">
+          <input type="checkbox" value=".tech"/>
+          <label>Soluciones Tecnológicas</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".movi"/>
+          <label>Movilidad y Urbanismo</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".cult"/>
+          <label>Cultura Libre</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".buen"/>
+          <label>Buen Vivir + Alternativas de vida</label>
+        </div>
+      </fieldset>
+      <button id="Reset">Quitar Filtros</button>
+      </form>
+  </div>
+</div>
+
+<div id="myNav2" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <div class="overlay-content">
+    <h1 class="overlad" style="color:#14FF38;font-size:180%">Filtro:</h1>
+    <h1 hidden class="overlad">Localidad</h1>
+    <p style="color:#14FF38">Filtre las iniciativas por categoría de <u>Localidad:</u></p>
+
+    <form class="controls" id="Filters">
+      <fieldset>
+        <div class="checkbox">
+          <input type="checkbox" value=".liba"/>
+          <label>GAM (Gran Área Metropolitana)</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".ecol"/>
+          <label>pacífico sur</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".econ"/>
+          <label>pacífico central</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".gene"/>
+          <label>Pacífico Norte</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" value=".gene"/>
+          <label>Zona Norte</label>
+        </div>
+      </fieldset>
+
+
+      <button id="Reset">Quitar Filtros</button>
+      </form>
+  </div>
+</div>
+
 TOCKIFY
 <div hidden data-tockify-component="calendar" data-tockify-calendar="el.ideario" id="calendar"></div>
 <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>

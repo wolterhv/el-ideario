@@ -17,7 +17,7 @@ label{
   font-weight: 300;
 }
 
-button{
+button.quite{
   display: inline-block;
   vertical-align: top;
   padding: .4em .8em;
