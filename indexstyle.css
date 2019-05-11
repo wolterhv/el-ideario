@@ -446,6 +446,13 @@ audio{
   button.filt {
     font-size: 85%;
   }
+
+  button.btn:hover{
+    background-color:#62FF79;
+    color: #008F15;
+    outline: 0 !important;
+  }
+
   .container2{
     width: auto;
   }
