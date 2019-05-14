@@ -48,16 +48,17 @@
         <audio controls>
           <source src="audio/permaculturabarrientos.mp3" type="audio/mpeg">
         </audio>
-      </div>
+      </div><br>
 
-    <div style="text-align:left">
+    <div>
         <button class="accordion2">¿Que es el Ideario?</button>
-          <div class="panel">
-
+          <div align=left class="panel">
+            <p>Ideario.net es una plataforma de inteligencia colectiva para la transformación social. Eso quiere decir que de manera conjunto, todas las personas que queremos ver un mundo mejor lo podemos hacer.</p>
+            <p>La función de ésta plataforma es conectar, inspirar</p>
           </div>
 
           <button class="accordion2">AudioTeca</button>
-            <div class="panel">
+            <div align=left class="panel">
               <p>Pronto aquí se encontrará un archivo de entrevistas, podcasts y contenido en audio interesante y educativo sobre transformación social.</p>
             </div>
 
@@ -122,40 +123,9 @@
 </div>
 
 <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="scripts/accordion3.js"></script>
 
-<script>
-var acc = document.getElementsByClassName("accordion3");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    }
-}
-</script>
-
-<script>
-var acc = document.getElementsByClassName("accordion2");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    }
-}
-</script>
 
 <script>
 function openNav1() {
