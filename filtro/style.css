@@ -8,7 +8,32 @@
   height: auto;
   margin: 15px;
   background: none;
+
 }
+
+#div2 {-webkit-animation-timing-function: ease;}
+#div2 {animation-timing-function: ease;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 300px;}
+  to {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 300px;}
+  to {left:0px;}
+}
+
+div {
+  position: relative;
+  -webkit-animation: mymove 0.4s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 0.4s ;
+}
+
+
+
 
 /* The "show" class is added to the filtered elements */
 .show {
