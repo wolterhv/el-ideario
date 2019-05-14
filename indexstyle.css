@@ -447,7 +447,7 @@ audio{
   }
 
   button.filt {
-    font-size: 85%;
+    font-size: 80%;
   }
 
   button.btn:hover{
@@ -481,7 +481,7 @@ audio{
 }
 
 div.spacer{
-  display:inline;
+  display:block
 }
 }
 
