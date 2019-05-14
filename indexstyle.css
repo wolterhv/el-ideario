@@ -386,6 +386,9 @@ div.lang{
   bottom:5px;
 }
 
+div.spacer{
+  display:none
+}
 img.lang{
   max-width: 50px;
   text-shadow: 0 0 3px #7E93B4,0 0 3px #7E93B4
@@ -475,6 +478,10 @@ audio{
     padding: 10px;
     height:auto;
     box-sizing: content-box;
+}
+
+div.spacer{
+  display:inline;
 }
 }
 
