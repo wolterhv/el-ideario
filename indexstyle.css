@@ -223,8 +223,11 @@ button.btn {
 button.btn.actived {
   background-color:#62FF79;
   color: #008F15;
+  font-size: 120%;
+  transition: 0.7s
   outline: 0 !important;
 }
+
 button.btn:hover{
   background-color: #9E9E9E;
   color: #DEDEDE;
@@ -280,10 +283,10 @@ button.accordion3 {
   display: inline-block;
   background:#62FF79;
   padding: 5px;
-  width: 40%;
+  width: 20%;
   font-family:arial;
   font-weight: bold;
-  font-size: 135%;
+  font-size: 115%;
   color: #008F15;
   margin-bottom: 3px;
   border: solid 1px #62FF79;
@@ -486,6 +489,10 @@ audio{
     color: #008F15;
     outline: 0 !important;
   }
+
+button.accordion3 {
+  width: 70%;
+}
 
   .container2{
     width: auto;
