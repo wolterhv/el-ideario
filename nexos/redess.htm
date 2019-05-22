@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>RedESS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../nexostyle.css">
+</head>
+<body>
+
+
+<div align="center">
+<section>
+<h1>RedESS</h1>
+<img class="logo" src="https://www.redesscr.org/?lightbox=dataItem-jft5j7tl" alt="-">
+
+<p>Somos la Red de Economía Social Solidaria (RedESS) de Costa Rica, un movimiento organizado desde el año 2013 que pretende ser un espacio de discusión, acción y representación de la economía solidaria en nuestro país.</p>
+<h3>Acciones:</h3>
+<ul>
+  <li>Organizar encuentros para articular y fortalecer la economía solidaria</li>
+  <li>Trabajar a favor de un marco legal que permita mejores herramientas para practicar ésta economía</li>
+</ul>
+
+<table>
+  <tr>
+    <td>Participación:</td>
+    <td>Abierta - eventos gratuitos</td>
+  </tr>
+  <tr>
+    <td>Correo electrónico:</td>
+    <td>ess.redcr@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Website</td>
+    <td><a href="http://redesscr.org">redess.org</a></td>
+  </tr>
+  <tr>
+    <td>Teléfono:</td>
+    <td>8564-9457</td>
+  </tr>
+</table>
+
+          <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/ReRedESS/"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
+            <a hidden target="_blank" href="#"><img class="redes" src="../img/inst.png" alt="instagram"></a>
+            <a hidden target="_blank" href="#"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
+            <a hidden target="_blank" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCpE83qazJu2g19y5xB9G5lA/videos"><img class="redes" src="../img/ytb.png" alt="youtube"></a>
+          </div>
+          <br>
+
+
+          <button class="accordion3">más información</button>
+            <div class="panel">
+              <p>La Red de Economía Social Solidaria de Costa Rica (RedESS) nace en 2013 luego del encuentro nacional de organizaciones titulado "Encuentro Nacional de Economía Social Solidaria: Economías Alternativas para el bien común" en el cual se plantea la necesidad de generar espacios de acción y reflexión conjunta.</p>
+              <p>Nos entendemos como un proceso de articulación, de diálogo, de reflexión, de comunicación y de acción; un tejido social para facilitar las relaciones sociales, económicas, políticas, culturales entre sujetos y colectivos sociales; para promover y fortalecer la ESS.</p>
+              <p>Somos un movimiento que permite el intercambio de intereses de manera ampliada y densa, según su potencial y plantea como principio fundamental la participación horizontal, la solidaridad, la equidad, el compromiso y la construcción colectiva. Que plantea el desafío del trabajo en equipo, la construcción de sentido como el consenso sin relaciones de opresión o dominación. Es una construcción histórica y cultural de acción, lucha, empoderamiento, capacitación y potenciación del saber, el conocimiento y la visión de la gente en el espacio y en el tiempo concreto según sus necesidades.</p>
+              <p>La RedESS construye su sentido de pertenencia e identidad, pero también de diferenciación y de conformación de límites, con sus propios valores y principios de solidaridad, equidad, respeto y producción de saberes legítimos en la sociedad y la naturaleza. Somos productoras/es de poderes y de saberes.</p>
+              <h3>Actualmente participan unas 50 organizaciones:</h3>
+              <p>Asociaciones, Colectivos, Redes, Pequeñas cooperativas, Sociedades Civiles, Fundaciones, grupos organizados y personas interesadas en construir conjuntamente alternativas solidarias para bien común. Además en RedESS se suman organizaciones de todo el país, pero principalmente de seis territorios donde se llevan procesos de trabajo.</p>
+
+            </div>
+
+</div>
+<div class="back">
+  <a href="javascript:history.back()"><img class="back" src="../img/back.png" alt="back"></a>
+</div>
+</section>
+</div>
+
+
+<script type="text/javascript" src=../scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.887530,-84.157895(Aquí)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+}
+</script>
+</body>
+</html>

@@ -13,32 +13,35 @@
 <div align="center">
 <section>
 <h1>ORG</h1>
-<img class="logo" src="" alt="Imagen">
+<img class="logo" src="" alt="-">
 
 <p></p>
 <h3>Acciones:</h3>
-<p></p>
+<ul>
+  <li></li>
+  <li></li>
+</ul>
 
-          <table>
-              <tr>
-              <td>correo electrónico:</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Opción de Voluntariado</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
+<table>
+  <tr>
+    <td>Participación:</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Correo electrónico:</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Website</td>
+    <td></td>
+  </tr>
+</table>
 
           <div class="redes">
             <a target="_blank" href="#"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
             <a target="_blank" href="#"><img class="redes" src="../img/inst.png" alt="instagram"></a>
             <a target="_blank" href="#"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
-            <a target="_blank" href="#"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+            <a target="_blank" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
             <a target="_blank" href="#"><img class="redes" src="../img/ytb.png" alt="youtube"></a>
           </div>
           <br>
@@ -58,5 +61,24 @@
 
 
 <script type="text/javascript" src=../scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.887530,-84.157895(Aquí)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.887530,-84.157895&amp;ll=");
+}
+</script>
 </body>
 </html>

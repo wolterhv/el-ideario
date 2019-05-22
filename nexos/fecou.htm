@@ -17,30 +17,28 @@
 
 <p>El FECOU actualmente es un colectivo que se dedica a gestionar su espacio físico, en el cual se desarrollan todo tipo de actividades, eventos, y reuniones orientadas a la transformación social.</p>
 <h3>Acciones:</h3>
-<p>Abrir un espacio libre y autónomo para que diferentes colectivos, organizaciones, proyectos y personas puedan realizar sus reuniones y actividades.</p>
-<p>Gestionar una agenda cultural de participación abierta, comunitaria e inclusiva.</p>
-
+<ul>
+  <li>Abrir un espacio libre y autónomo para que diferentes colectivos, organizaciones, proyectos y personas puedan realizar sus reuniones y actividades.</li>
+  <li>Gestionar una agenda cultural de participación abierta, comunitaria e inclusiva.</li>
+</ul>
           <table>
+            <tr>
+              <td>Participación</td>
+              <td>Abierta - eventos gratuitos</td>
+            </tr>
               <tr>
               <td>correo electrónico:</td>
               <td>ecologista.ucr@gmail.com</td>
             </tr>
-            <tr>
-              <td>Participación</td>
-              <td>abierta</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
+            
           </table>
 
           <div class="redes">
             <a target="_blank" href="https://es-la.facebook.com/pg/frenteecologistauniversitario"><img class="redes" src="../img/fb.png" alt="facebook link"></a>
             <a target="_blank" href="https://www.instagram.com/explore/locations/739006406271786/fecou/"><img class="redes" src="../img/inst.png" alt="instagram"></a>
-            <a target="_blank" href="#"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
-            <a target="_blank" href=""><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
-            <a target="_blank" href="#"><img class="redes" src="../img/ytb.png" alt="youtube"></a>
+            <a hidden target="_blank" href="#"><img class="redes" src="../img/whtspp.png" alt="whatsapp"></a>
+            <a target="_blank" onclick="mapsSelector()"><img class="redes" src="../img/gglmps.png" alt="maps link"></a>
+            <a hidden target="_blank" href="#"><img class="redes" src="../img/ytb.png" alt="youtube"></a>
           </div>
           <br>
 
@@ -73,7 +71,25 @@ Repensarse como un espacio ecofeminista y en defensa de los cuerpos violentados 
 </section>
 </div>
 
-
 <script type="text/javascript" src=../scripts/accordion3.js></script>
+<script type="text/javascript">
+function mapsSelector() {
+  if /* if we're on iOS, open in Apple Maps */
+    ((navigator.platform.indexOf("iPhone") != -1) ||
+     (navigator.platform.indexOf("iPad") != -1) ||
+     (navigator.platform.indexOf("iPod") != -1))
+    window.open("http://maps.apple.com/maps?daddr=9.9353777,-84.0492759&amp;ll=");
+
+  var isAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+
+    if (isAndroid)
+    {
+      window.open("geo:0,0?q=9.9353777,-84.0492759(FECOU)");
+    }
+
+  else /* else use Google */
+    window.open("http://maps.google.com/maps?daddr=9.9353777,-84.0492759&amp;ll=");
+}
+</script>
 </body>
 </html>
