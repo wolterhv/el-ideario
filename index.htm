@@ -76,7 +76,7 @@
                   <div class="portal">
                     <button class="caos" id="random"><img src="img/caos4.png" style="width:50px" alt="random"></button><br><img hidden src="img/port.png" alt="Portal:"><br>
                   </div>
-                  <div class="video-container">
+                  <div class="video-container" id="cont">
                     <div style="text-align:center" frameborder="0" id="random_player"></div>
                   </div>
 
@@ -147,7 +147,7 @@
 <script src="scripts/TV.js"></script>
 <script type="text/javascript">
   $("#random").click(function() {
-    $("#random_player").load(" #random_player > *");
+    $("#cont").load(" #cont > *");
   });
 </script>
 
