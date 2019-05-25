@@ -21,6 +21,21 @@
     text-align: left;
 }
 
+.overlay-contentTV {
+  position: relative;
+  top: 15%;
+  min-height: 500px;
+    }
+
+div.centerTV{
+margin: auto;
+ width: 50%;
+ padding: 10px;
+ min-height: 500px;
+ border:0.5px solid #62FF79;
+ border-radius: 10px;
+}
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -39,4 +54,10 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+@media screen and (max-width: 499px){
+  div.centerTV{
+     width: 95%;
+      border:none;
+  }
 }

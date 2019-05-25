@@ -66,18 +66,24 @@
 
 
 
-            <button class="accordion2">Ideario TV</button>
-            <div align="center" class="panel">
-              <p>Ideas inspiradoras que han sido aplicadas en otras partes del mundo</p>
+            <span onclick="openNav2()" style="cursor:pointer"><button class="accordion2">Ideario TV</button></span>
+            <div id="myNav2" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+              <div class="overlay-contentTV" style="text-align:center;">
+                <div class="centerTV">
+                  <p style="color:#62FF79">Ideas inspiradoras que han sido aplicadas en CR y otras partes del mundo</p>
+                  <div hidden class="portal2" style="margin-left:30%;margin-right:auto"></div>
+                  <div class="portal">
+                    <button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:"><br>
+                  </div>
+                  <div class="video-container">
+                    <div style="text-align:center" frameborder="0" id="random_player"></div>
+                  </div>
 
-              <div class="portal2">
-                <div class="portal">
-                  <br><button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:">
                 </div>
-                <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
-              </div>
-
             </div>
+            </div>
+
 
 
               <button class="accordion2">Participar</button>
@@ -136,19 +142,17 @@
 
 <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="scripts/accordion3.js"></script>
-
-
-
-<script>
-function openNav1() {
-    document.getElementById("myNav1").style.width = "100%";
-    }
-    function closeNav1() {
-    document.getElementById("myNav1").style.width = "0%";
-    }
-</script>
-
+<script type="text/javascript" src="scripts/overlay.js"></script>
 <script type="text/javascript" src="my_script.js"></script>
+<script src="scripts/TV.js">
+
+</script>
+<script>
+      function refreshIframe() {
+          var ifr = document.getElementById("random_player")[0];
+          ifr.src = ifr.src;
+      }
+</script>
 
 </body>
 </html>

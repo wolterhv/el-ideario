@@ -344,6 +344,7 @@ button.caos{
   padding-right: 2px;
   border: solid 0px #62FF79;
   border-radius: 40px;
+  cursor:pointer;
 }
 button.caos:hover{
   background-color:#00B6F0;
