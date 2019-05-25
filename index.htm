@@ -74,7 +74,7 @@
                   <p style="color:#62FF79">Ideas inspiradoras que han sido aplicadas en CR y otras partes del mundo</p>
                   <div hidden class="portal2" style="margin-left:30%;margin-right:auto"></div>
                   <div class="portal">
-                    <button class="caos" onclick="refreshIframe();"><img src="img/caos4.png" style="width:50px" alt="caos"></button><br><img hidden src="img/port.png" alt="Portal:"><br>
+                    <button class="caos" id="random"><img src="img/caos4.png" style="width:50px" alt="random"></button><br><img hidden src="img/port.png" alt="Portal:"><br>
                   </div>
                   <div class="video-container">
                     <div style="text-align:center" frameborder="0" id="random_player"></div>
@@ -144,9 +144,13 @@
 <script type="text/javascript" src="scripts/accordion3.js"></script>
 <script type="text/javascript" src="scripts/overlay.js"></script>
 <script type="text/javascript" src="my_script.js"></script>
-<script src="scripts/TV.js">
-
+<script src="scripts/TV.js"></script>
+<script type="text/javascript">
+  $("#random").click(function() {
+    $("#random_player").load(" #random_player > *");
+  });
 </script>
+
 <script>
       function refreshIframe() {
           var ifr = document.getElementById("random_player")[0];
