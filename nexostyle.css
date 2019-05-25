@@ -259,9 +259,9 @@ button.accordion3 {
 }
 
 button.accordion3.active, button.accordion3:hover {
-  background-color:#FF62E8;
-  border: solid 1px #8F007A;
-  color: #8F007A;
+  background-color:#00B6F0;
+  border: solid 1px #004257;
+  color: #004257;
 }
 
 button.caos{
