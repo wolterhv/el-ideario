@@ -15,6 +15,13 @@ PORTAL INDEX:
         <iframe width="100%" style="border:0px;" name="portal" src="content/portal.htm" scrolling="no" onload="resizeIframe(this)" allowFullScreen></iframe>
       </div>
 
+      <script>
+            function refreshIframe() {
+                var ifr = document.getElementsByName('portal')[0];
+                ifr.src = ifr.src;
+            }
+      </script>
+          
 FILTROs
 
 <div align="center" class="filtrodiv">
