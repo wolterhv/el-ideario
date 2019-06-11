@@ -416,7 +416,7 @@ div.comgris{
   text-align: center;
 }
 
-.comhack{
+div.comhack{
   background-color:#282828;
   color: #00FF76;
   font-family: monospace;
@@ -424,7 +424,7 @@ div.comgris{
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding:0px;
+  padding:10px;
   text-align: left;
   font-size: 120%;
 }

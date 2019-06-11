@@ -39,9 +39,10 @@
 <div align=center>
   <div class="container2">
     <section>
-      <div class="comhack"><div id="auto"></div></div>
 
+      <!-- <div class="comhack"><div id="auto"></div></div> -->
       <div class="comhack"><div id="auto">ésta aplicación se encuentra en proceso de modificación para su segunda etapa</div></div>
+
       <div class="comgris">
         <strong>Aprendizaje:</strong>
         <br>introducción a la permacultura - Guido Barrientos
@@ -145,7 +146,15 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="scripts/accordion3.js"></script>
 <script type="text/javascript" src="scripts/overlay.js"></script>
-<script type="text/javascript" src="my_script.js"></script>
+<!-- <script type="text/javascript" src="my_script.js"></script> -->
+<script type="text/javascript">
+// Este script es para esconder el comhack cuando no tiene texto.
+comhack_outer_div = document.getElementsByClassName("comhack")[0];
+comhack_inner_div = document.getElementById("auto");
+if (comhack_inner_div.innerHTML == "") {
+  comhack_outer_div.style.display = "none";
+}
+</script>
 <script src="scripts/TV.js"></script>
 <script type="text/javascript">
   $("#random").click(function() {
